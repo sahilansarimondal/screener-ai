@@ -1,4 +1,3 @@
-import { Icon } from "@radix-ui/react-select";
 import React from "react";
 
 interface Icons {

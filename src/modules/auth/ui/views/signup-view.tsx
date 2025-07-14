@@ -1,4 +1,3 @@
-import { SignupForm } from "@/components/SignupForm";
 import { GalleryVerticalEnd } from "lucide-react";
 
 export default function SignUpPage() {
@@ -14,17 +13,11 @@ export default function SignUpPage() {
           </a>
         </div>
         <div className="flex flex-1 items-center justify-center">
-          <div className="w-full max-w-xs">
-            <SignupForm />
-          </div>
+          <div className="w-full max-w-xs">{/* <SignupForm /> */}</div>
         </div>
       </div>
       <div className="bg-muted relative hidden lg:block">
-        <img
-          src="/login-poster.png"
-          alt="Image"
-          className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
-        />
+        this section is for poster
       </div>
     </div>
   );
