@@ -11,6 +11,7 @@ import { Icons } from "@/components/ui/icons";
 import { MainNav } from "@/components/layout/main-nav";
 import { SiteFooter } from "@/components/layout/footer";
 import { PricingSection } from "@/components/pricing/pricing";
+import { ModeToggle } from "@/components/mode-toggle";
 
 export default function LandingPage() {
   return (
@@ -19,6 +20,7 @@ export default function LandingPage() {
         <div className="flex h-20 items-center justify-between py-6">
           <MainNav />
           <nav className="flex items-center space-x-4">
+            <ModeToggle />
             <Button variant="ghost" asChild>
               <Link href="/auth/login">Sign in</Link>
             </Button>
