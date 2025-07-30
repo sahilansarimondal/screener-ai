@@ -40,7 +40,7 @@ StockHeaderProps) {
       // { title: "Investors", value: "investors" },
       { title: "Documents", value: "documents" },
     ],
-    []
+    [name]
   );
 
   const handleTabClick = (e: React.MouseEvent, tab: string) => {
