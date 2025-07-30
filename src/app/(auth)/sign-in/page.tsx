@@ -1,7 +1,17 @@
-import React from "react";
+// app/signin/page.jsx
+import SignInForm from "@/components/auth/signin-form";
 
-const Page = () => {
-  return <div>SignIn page</div>;
+export const metadata = {
+  title: "Sign In",
+  description: "Sign in to your account",
 };
 
-export default Page;
+const SignInPage = () => {
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-muted p-4">
+      <SignInForm />
+    </div>
+  );
+};
+
+export default SignInPage;
