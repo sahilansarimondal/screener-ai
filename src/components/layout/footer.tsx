@@ -3,8 +3,8 @@ import { Icons } from "@/components/ui/icons";
 
 export function SiteFooter() {
   return (
-    <footer className="border-t bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container py-10">
+    <footer className="border-t max-w-10/12 mx-auto p-6 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className=" py-10">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-5">
           <div className="col-span-full lg:col-span-1">
             <div className="flex items-center space-x-2">

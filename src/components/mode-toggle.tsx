@@ -7,13 +7,11 @@ import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 
 export function ModeToggle() {
-  const { setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
 
   return (
     <Button
-      onClick={() =>
-        setTheme((current) => (current === "dark" ? "light" : "dark"))
-      }
+      onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
       variant="outline"
       size="icon"
     >

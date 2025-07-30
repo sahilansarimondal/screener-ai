@@ -1,7 +1,17 @@
-import React from "react";
+// app/signup/page.jsx
+import SignUpForm from "@/components/auth/signup-form";
 
-const Page = () => {
-  return <div>SignUp Page</div>;
+export const metadata = {
+  title: "Sign Up",
+  description: "Create a new account",
 };
 
-export default Page;
+const SignUpPage = () => {
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-muted p-4">
+      <SignUpForm />
+    </div>
+  );
+};
+
+export default SignUpPage;
